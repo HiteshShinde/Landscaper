@@ -102,6 +102,14 @@
     width: 100%;
 }
 
+#contact .container .contact-form .form-group {
+    display: block;
+}
+
+#contact .container .contact-form .form-group input + input {
+    margin-left: 0;
+}
+
 #contact .container .contact-form .form-group .form-input:first-child {
     margin-bottom: 20px;
 }
