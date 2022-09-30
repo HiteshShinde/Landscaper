@@ -116,6 +116,10 @@ a {
     color: #69c400;
 }
 
+.menu-wrap {
+    display: none;
+}
+
 /* Showcase */
 #showcase {
     background: url('./img/showcase.jpg') no-repeat center center/cover;
@@ -161,6 +165,7 @@ a {
 
 #about .container .about-container .about-item {
     flex: 1;
+    padding: 20px;
 }
 
 #about .container .about-container .about-info .para {
@@ -173,10 +178,6 @@ a {
     color: #555;
     padding: 10px 0;
     text-align: justify;
-}
-
-#about .container .about-container .about-item {
-    padding: 20px;
 }
 
 #about .container .about-container .about-item .image-1 {
