@@ -306,15 +306,15 @@ a {
     height: 100%;
 }
 
-#gallary .container .grid-container .grid-img-cont .gi-1 { background: url('/img/gallary-1.jpg') no-repeat center center/cover; }
-#gallary .container .grid-container .grid-img-cont .gi-2 { background: url('/img/gallary-2.jpg') no-repeat center center/cover; }
-#gallary .container .grid-container .grid-img-cont .gi-3 { background: url('/img/gallary-3.jpg') no-repeat center center/cover; }
-#gallary .container .grid-container .grid-img-cont .gi-4 { background: url('/img/gallary-4.jpg') no-repeat center center/cover; }
-#gallary .container .grid-container .grid-img-cont .gi-5 { background: url('/img/gallary-5.jpg') no-repeat center center/cover; }
-#gallary .container .grid-container .grid-img-cont .gi-6 { background: url('/img/gallary-6.jpg') no-repeat center center/cover; }
-#gallary .container .grid-container .grid-img-cont .gi-7 { background: url('/img/gallary-7.jpg') no-repeat center center/cover; }
-#gallary .container .grid-container .grid-img-cont .gi-8 { background: url('/img/gallary-8.jpg') no-repeat center center/cover; }
-#gallary .container .grid-container .grid-img-cont .gi-9 { background: url('/img/gallary-9.jpg') no-repeat center center/cover; }
+#gallary .container .grid-container .grid-img-cont .gi-1 { background: url('img/gallary-1.jpg') no-repeat center center/cover; }
+#gallary .container .grid-container .grid-img-cont .gi-2 { background: url('img/gallary-2.jpg') no-repeat center center/cover; }
+#gallary .container .grid-container .grid-img-cont .gi-3 { background: url('img/gallary-3.jpg') no-repeat center center/cover; }
+#gallary .container .grid-container .grid-img-cont .gi-4 { background: url('img/gallary-4.jpg') no-repeat center center/cover; }
+#gallary .container .grid-container .grid-img-cont .gi-5 { background: url('img/gallary-5.jpg') no-repeat center center/cover; }
+#gallary .container .grid-container .grid-img-cont .gi-6 { background: url('img/gallary-6.jpg') no-repeat center center/cover; }
+#gallary .container .grid-container .grid-img-cont .gi-7 { background: url('img/gallary-7.jpg') no-repeat center center/cover; }
+#gallary .container .grid-container .grid-img-cont .gi-8 { background: url('img/gallary-8.jpg') no-repeat center center/cover; }
+#gallary .container .grid-container .grid-img-cont .gi-9 { background: url('img/gallary-9.jpg') no-repeat center center/cover; }
 
 .overlay {
     position: absolute;
