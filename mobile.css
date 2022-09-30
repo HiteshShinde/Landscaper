@@ -1,0 +1,317 @@
+#navbar {
+    background: #333;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#navbar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar .container ul {
+    display: flex;
+    list-style: none;
+    padding-top: 25px;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    position: absolute;
+    top: 143px;
+    left: 0;
+    background: rgba(22, 26, 22, 0.5);
+    width: 100%;
+}
+
+#about .container .about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+#about .container .about-container .about-info {
+    flex: 1;
+    padding-bottom: 30px;
+}
+
+#about .container .about-container .about-item {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+}
+
+#about .container .about-container .about-item .about-item-info {
+    padding-left: 20px;
+}
+
+#services .container .services-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+#services .container .services-container .service-item .service-img {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border-radius: 50%;
+    border: #77d012 10px solid;
+}
+
+#gallary .container ul li {
+    list-style: none;
+    padding: 10px 10px;
+    background: #dddddd;
+    color: #555;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+#gallary .container .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+    padding-bottom: 50px;
+    margin: 0 30px;
+}
+
+#contact .container .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 30px;
+}
+
+#contact .container .contacts .cnt {
+    padding: 50px 10px;
+}
+
+#contact .container .contact-form .form-group .form-input {
+    background: #fff;
+    padding: 12px;
+    border: #ddd 1px solid;
+    font-size: 16px;
+    width: 100%;
+}
+
+#contact .container .contact-form .form-group .form-input:first-child {
+    margin-bottom: 20px;
+}
+
+#message {
+    display: block;
+    width: 100%;
+    height: 150px;
+    border: #ddd 1px solid;
+    font-size: 18px;
+}
+
+@media(max-width: 500px) {
+    #navbar .container > ul {
+        display: none;
+    }
+
+    #navbar .container ul:last-child {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .menu-wrap {
+        display: block;
+    }
+
+    .menu-wrap {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+      
+    .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 55px;
+        height: 80px;
+        opacity: 0;
+    }
+      
+    .menu-wrap .hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 60px;
+        height: 80px;
+        padding: 1rem;
+        background: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    /* Hamburger Line */
+    .menu-wrap .hamburger > div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+      
+    /* Hamburger Lines - Top & Bottom */
+    .menu-wrap .hamburger > div::before,
+    .menu-wrap .hamburger > div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+    }
+      
+    /* Moves Line Down */
+    .menu-wrap .hamburger > div::after {
+        top: 10px;
+    }
+      
+    /* Toggler Animation */
+    .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+    }
+      
+    /* Turns Lines Into X */
+    .menu-wrap .toggler:checked + .hamburger > div:before,
+    .menu-wrap .toggler:checked + .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+      
+    /* Rotate On Hover When Checked */
+    .menu-wrap .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
+    }
+      
+    /* Show Menu */
+    .menu-wrap .toggler:checked ~ .menu {
+        visibility: visible;
+    }
+      
+    .menu-wrap .toggler:checked ~ .menu > div {
+        transform: scale(1);
+        transition-duration: 0.7s;
+    }
+      
+    .menu-wrap .toggler:checked ~ .menu > div > div {
+        opacity: 1;
+        transition:  opacity 0.4s ease 0.4s;
+    }
+      
+    .menu-wrap .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-wrap .menu > div {
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 50%;
+        width: 200vh;
+        height: 200vh;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+    }
+
+    .menu-wrap .menu > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .menu-wrap .menu > div > div > ul {
+        display: block;
+    }
+
+    .menu-wrap .menu > div > div > ul > li {
+        list-style: none;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .menu-wrap .menu > div > div > ul > li > a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.4s ease;
+    }
+
+    #showcase .showcase-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        background: rgba(22, 26, 22, 0.5);
+        width: 100%;
+    }
+
+    #showcase .showcase-content p {
+        color: #fff;
+        font-size: 22px;
+        padding: 25px;
+        max-width: 80%;
+        padding-bottom: 40px;
+    }
+
+    #showcase .showcase-content h1 {
+        font-size: 50px;
+    }
+
+    #about .container .about-container .about-item {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #gallary .container .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 20px;
+        padding-bottom: 50px;
+        margin: 0 30px;
+    }
+}
