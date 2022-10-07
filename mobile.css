@@ -2,7 +2,7 @@
     background: #333;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 #navbar .container {
@@ -29,6 +29,14 @@
     left: 0;
     background: rgba(22, 26, 22, 0.5);
     width: 100%;
+}
+
+.modal-content {
+    margin: 50% auto;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
 }
 
 #about .container .about-container {
@@ -288,7 +296,7 @@
         width: 100%;
     }
 
-    #showcase .showcase-content p {
+    #showcase .showcase-content > p {
         color: #fff;
         font-size: 22px;
         padding: 25px;
@@ -298,6 +306,14 @@
 
     #showcase .showcase-content h1 {
         font-size: 50px;
+    }
+
+    .modal-content {
+        margin: 50% auto;
+        width: 85%;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+        animation-name: modalopen;
+        animation-duration: 1s;
     }
 
     #about .container .about-container .about-item {

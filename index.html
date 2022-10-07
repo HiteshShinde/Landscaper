@@ -51,7 +51,20 @@
         <div class="showcase-content">
             <h1 class="l-heading">LANDSCAPING SERVICES</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quo doloribus, corrupti officiis iusto eius!</p>
-            <a href="#about" class="btn">MORE INFO</a>
+            <a id="modal-btn" class="btn">MORE INFO</a>
+
+            <div id="my-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Landscaping Services</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-info">Book Trained, Experienced & Verified Gardeners in your Area. Get Experts at your Doorstep. Latest Machinery, Reasonable Rate, Police Verified Staff, Eco friendly chemicals, Call Now. 123456789</p>
+                        <a href="#about" id="about-btn" class="btn">VIEW MORE</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -239,5 +252,36 @@
             <p>&copy; 2016 Landscaper. Designed by <span>TemplateWire</span></p>
         </div>
     </footer>
+
+    <script>
+        // Get DOM Elements
+        const modal = document.querySelector('#my-modal');
+        const modalBtn = document.querySelector('#modal-btn');
+        const closeBtn = document.querySelector('.close');
+        const aboutBtn = document.querySelector('#about-btn');
+
+        // Events
+        modalBtn.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+        aboutBtn.addEventListener('click', closeModal);
+        window.addEventListener('click', outsideClick);
+
+        // Open
+        function openModal() {
+            modal.style.display = 'block';
+        }
+
+        // Close
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        // Close If Outside Click
+        function outsideClick(e) {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
